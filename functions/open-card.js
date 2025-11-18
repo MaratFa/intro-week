@@ -1,5 +1,6 @@
 import { technologies } from "../data/technologies.js";
 import { openModal } from "./open-modal.js";
+import { toModal } from "./to-modal.js";
 
 export function openCard(event) {
   const data = event.target.dataset;
@@ -7,5 +8,5 @@ export function openCard(event) {
 
   if (!tech) return;
 
-  openModal("<h1>TEST</h1>", tech.title);
+  openModal(toModal(tech), tech.title);
 }
