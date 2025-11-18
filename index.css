@@ -114,6 +114,7 @@ body {
 
 .modal p {
   margin-bottom: 1rem;
+  text-align: justify
 }
 
 .modal hr {
