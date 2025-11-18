@@ -4,6 +4,7 @@ import { content } from "./constants/constants.js";
 import { backdrop } from "../constants/constants.js";
 import { openCard } from "./functions/open-card.js";
 import { closeModal } from "./functions/close-modal.js";
+import { toggleTech} from "./functions/toggle-tech.js";
 
 function init() {
   renderCards();
@@ -11,6 +12,7 @@ function init() {
 
   content.addEventListener("click", openCard);
   backdrop.addEventListener("click", closeModal);
+  modal.addEventListener("change", toggleTech);
 }
 
 init();
