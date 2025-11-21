@@ -16,5 +16,5 @@ export function renderProgress() {
 
   progress.style.backgroundColor = background;
   progress.style.width = `${percent}%`;
-  progress.textContent = `${percent}%`;
+  progress.textContent = `${percent} %`;
 }

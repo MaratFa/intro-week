@@ -7,6 +7,8 @@ export function toModal(tech) {
     <div>
       <input type="checkbox" id="done" ${checked} data-id="${tech.id}"/>
       <label for="done">Learned</label>
+      <hr />      
+      <button type="submit" class="btn" data-id="${tech.id}" id="deleteBtn">Delete</button>
     </div>
   `;
 }
